@@ -9,7 +9,4 @@ public class SpringWebfluxTemplateApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringWebfluxTemplateApplication.class, args);
     }
-
-
-
 }

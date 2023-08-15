@@ -12,9 +12,6 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 @Configuration
 public class UserRouter {
 
-//    @Autowired
-//    UserHandler userHandler;
-
     @Bean
     public RouterFunction<ServerResponse> userRoutes(UserHandler userHandler) {
         return RouterFunctions

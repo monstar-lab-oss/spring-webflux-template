@@ -56,7 +56,7 @@ public class UserHandler {
                         userService.getUserById(id) // Mono user 1 - {1: Muhittin KAYA}
                         .flatMap(user ->
                                 monoUpdateUserRequest
-                                .map(request -> userService.mapUpdateUserRequestToUser(user, request))) //Request -> firstname: Muhittin lastname: KAY update in here
+                                .map(request -> userService.mapUpdateUserRequestToUser(user, request))) //Request -> firstname: "" lastname: "" update in here
                         .flatMap(user -> userService.saveUser(user)) // save to repo user
                                 .map(user -> userService.mapUserToUserResponse(user)), // map user to user response to return
                         UserResponse.class
