@@ -8,7 +8,7 @@ Provides Sample of Project for Spring Boot and Spring Webflux with maven setup. 
 ## How to code
 Import as a java project in an IDE of your choice.
 
-Before running the app set the following env variables (take advantage of the IDEA run configuration)
+Before running the app set the following variables in applicaiton properties according to your local.
 
 `spring.r2dbc.url=`
 
